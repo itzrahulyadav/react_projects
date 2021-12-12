@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  background: linear-gradient(rgb(68, 198, 207), rgb(82, 181, 238));
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+.movie {
+  width: 300px;
+  margin: 10px;
+  margin-left: 20px;
+  background: linear-gradient(blue, indigo);
+  border-radius: 3px;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  color: white;
+}
+.movie img {
+  width: 100%;
+}
+
+.movie-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.movie_info {
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.3rem 1rem;
+}
+.movie-story {
+  position: absolute;
+  background-color: azure;
+  border-radius: 3px 3px 0 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: black;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+}
+.movie:hover .movie-story {
+  transform: translateY(0%);
+}
+
+.search {
+  border-radius: 40px;
+  padding: 0.5em;
+  border: 2px solid black;
+  background: inherit;
+  color: white;
+  font-size: 15px;
+}
+header {
+  background: linear-gradient(toleft, rgb(162, 218, 240), rgb(51, 90, 148));
+  padding: 1rem;
+  margin: 0 0 1rem 0;
+  width: 100%;
+}
+.tag {
+  background: rgb(14, 12, 12);
+}
+.green {
+  color: rgb(12, 190, 66);
+}
+.red {
+  color: rgb(236, 38, 38);
+}
+.yellow {
+  color: yellow;
+}
